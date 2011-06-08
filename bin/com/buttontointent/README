@@ -1,0 +1,31 @@
+
+
+程序功能：
+========================================================
+用一个按键实现Activity的跳转
+
+一定注意：
+========================================================
+新的Activity一定要记得在AndroidManifest.xml中注册哦。
+<activity android:name=".NewActivity">
+
+学习积累：
+========================================================
+1.按键获得以及添加按键的侦听事件。
+	//布局文件里的按键
+    Button button = (Button)findViewById(R.id.button1);
+    //侦听按键的事件
+    button.setOnClickListener(new OnClickListener(){
+    
+2.Intent实现Activity跳转。
+	//新建一个Intent对象
+	Intent intent = new Intent();
+	//指定Intent要启动的类
+	intent.setClass(HelloAndroid.this, NewActivity.class);
+	//启动一个新的Activity
+	startActivity(intent);	
+	//关闭当前的Activity
+	HelloAndroid.this.finish();
+
+3.Log.d("button", "has been clicked....");//打印调试信息
+

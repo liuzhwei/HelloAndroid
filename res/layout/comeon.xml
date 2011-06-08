@@ -1,0 +1,7 @@
+
+    <Button 
+    	android:text="再跳回去" 
+    	android:id="@+id/button1" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	xmlns:android="http://schemas.android.com/apk/res/android"></Button>
